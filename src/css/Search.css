@@ -1,0 +1,126 @@
+
+body, td, th, button, option, select, input {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.ttop{
+    width:100%;
+    height:60px;
+    margin-top:0;
+}
+
+.top{
+    /* 设置宽度高度背景颜色 */
+    z-index:999;
+    height: 60; /*高度改为自动高度*/
+    width:100%;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    background:rgb(144, 215, 236);
+    position: absolute/*fixed*/; /*固定在顶部*/
+    top: 0;/*离顶部的距离为0*/
+    /*margin-bottom: 0px;*/
+    padding: 0px;
+}
+.top ul{
+    /* 清除ul标签的默认样式 */
+    width: auto;/*宽度也改为自动*/
+    list-style-type: none;
+    white-space:nowrap;
+    overflow: hidden;
+    margin-left: 5%;
+    /* margin-top: 0;          */
+    padding: 0;
+
+}
+.top li {
+    float:left; /* 使li内容横向浮动，即横向排列  */
+    margin-right:2%;  /* 两个li之间的距离*/
+    position: relative;
+    overflow: hidden;
+    font-size: 20;
+}
+
+.top li a{
+   /* 设置链接内容显示的格式*/
+    display: block; /* 把链接显示为块元素可使整个链接区域可点击 */
+    color:black;
+    text-align: center;
+    padding: 3px;
+    overflow: hidden;
+    text-decoration: none; /* 去除下划线 */
+    
+}
+.top li a:hover{
+    /* 鼠标选中时背景变为黑色 */
+    background-color: #111;
+    color: white;
+}
+.top ul li ul{
+    /* 设置二级菜单 */
+    display:block;
+    
+    margin-left: -0.2px;
+    background:rgb(189, 181, 181);
+    position: relative;
+    display: none; /* 默认隐藏二级菜单的内容 */
+
+}
+.top ul li ul li{
+    /* 二级菜单li内容的显示 */
+    
+    float:none;
+    text-align: center;
+}
+.top ul li:hover ul{
+    /* 鼠标选中二级菜单内容时 */
+    display: block;
+}
+.test li{
+    text-align:right;
+}
+.right{
+    position:absolute;
+    right:0px;
+}
+body{
+    background:#eff3f5;
+}
+
+.firstpart{
+    margin-left: 4.1%;
+    margin-top: 100px;
+    width: 25%;
+    height: 800px;
+    margin-right: 4%;
+    background: #c7cacc;
+    clear:both;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.firstpart ul{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+.content{
+    width: 100%;
+    height: 150%;
+}
+
+.p2{
+    width: 65%;
+    height: 55px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    /*-webkit-line-clamp用来限制在一个块元素显示的文本的行数。 为了实现该效果，它需要组合其他的WebKit属性。常见结合属性：
+    display: -webkit-box; 必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 。
+    -webkit-box-orient 必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。*/
+}
