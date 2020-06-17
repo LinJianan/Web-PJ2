@@ -69,7 +69,7 @@ function execute() {
             </script>";
         return;
     }
-    elseif ($ImageID == -1) {
+    elseif ($_FILES["file"]["error"] == 0) {
         $Path = $_FILES["file"]["name"];
     }
     else {
